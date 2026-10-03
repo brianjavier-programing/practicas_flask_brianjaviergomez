@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cuadrado</title>
+</head>
+
+<body>
+
+    <h1>Calculadora de cuadrado</h1>
+
+    <form method="POST">
+
+        <label>Escribe el lado del cuadrado:</label>
+
+        <input type="number" name="lado" step="any" required>
+
+        <button type=submit>Calcular</button>
+
+    </form>
+
+    {% if area is not none %}
+        <h2>Resultados</h2>
+
+        <p>Area: {{ area }}</p>
+        <p>Perimetro: {{ perimetro }}</p>
+    {% endif %}
+
+</body>
+</html>
